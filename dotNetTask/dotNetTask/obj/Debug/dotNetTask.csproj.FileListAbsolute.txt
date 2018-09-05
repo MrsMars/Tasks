@@ -1,0 +1,7 @@
+D:\Work\task\dotNetTask\dotNetTask\bin\Debug\dotNetTask.exe.config
+D:\Work\task\dotNetTask\dotNetTask\bin\Debug\dotNetTask.exe
+D:\Work\task\dotNetTask\dotNetTask\bin\Debug\dotNetTask.pdb
+D:\Work\task\dotNetTask\dotNetTask\obj\Debug\dotNetTask.csproj.CoreCompileInputs.cache
+D:\Work\task\dotNetTask\dotNetTask\obj\Debug\dotNetTask.exe
+D:\Work\task\dotNetTask\dotNetTask\obj\Debug\dotNetTask.pdb
+D:\Work\task\dotNetTask\dotNetTask\obj\Debug\dotNetTask.csprojResolveAssemblyReference.cache
