@@ -1,0 +1,6 @@
+D:\Work\C#\Byte++\Lesson_01\test\bin\Debug\test.exe.config
+D:\Work\C#\Byte++\Lesson_01\test\bin\Debug\test.exe
+D:\Work\C#\Byte++\Lesson_01\test\bin\Debug\test.pdb
+D:\Work\C#\Byte++\Lesson_01\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+D:\Work\C#\Byte++\Lesson_01\test\obj\Debug\test.exe
+D:\Work\C#\Byte++\Lesson_01\test\obj\Debug\test.pdb
