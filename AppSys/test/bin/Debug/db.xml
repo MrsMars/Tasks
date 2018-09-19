@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db>
+    <students>
+        <student studentId="1">
+            <firstName>John</firstName>
+            <lastName>Jonson</lastName>
+            <facultyCode>901</facultyCode>
+            <universityCode>81</universityCode>
+        </student>
+        <student studentId="2">
+            <firstName>Ann</firstName>
+            <lastName>Mirror</lastName>
+            <facultyCode>520</facultyCode>
+            <universityCode>19</universityCode>
+        </student>
+        <student studentId="3">
+            <firstName>Jimmy</firstName>
+            <lastName>Arms</lastName>
+            <facultyCode>109</facultyCode>
+            <universityCode>81</universityCode>
+        </student>
+        <student studentId="4">
+            <firstName>Willy</firstName>
+            <lastName>Pans</lastName>
+            <facultyCode>802</facultyCode>
+            <universityCode>12</universityCode>
+        </student>
+        <student studentId="5">
+            <firstName>Jack</firstName>
+            <lastName>Dollson</lastName>
+            <facultyCode>701</facultyCode>
+            <universityCode>19</universityCode>
+        </student>
+        <student studentId="6">
+            <firstName>Nick</firstName>
+            <lastName>Brink</lastName>
+            <facultyCode>512</facultyCode>
+            <universityCode>12</universityCode>
+        </student>
+        <student studentId="7">
+            <firstName>Tommy</firstName>
+            <lastName>Largs</lastName>
+            <facultyCode>520</facultyCode>
+            <universityCode>19</universityCode>
+        </student>
+        <student studentId="8">
+            <firstName>Lindsay</firstName>
+            <lastName>Hunt</lastName>
+            <facultyCode>414</facultyCode>
+            <universityCode>12</universityCode>
+        </student> 
+    </students>
+    <faculties>
+        <faculty facultyId="1">
+            <name>Computer programming</name>
+            <code>901</code>
+            <uiversity>BSUIR</uiversity>
+        </faculty>
+        <faculty facultyId="2">
+            <name>Information technologies</name>
+            <code>520</code>
+            <uiversity>BSU</uiversity>
+        </faculty>
+        <faculty facultyId="3">
+            <name>International relantionships</name>
+            <code>512</code>
+            <uiversity>BSUIR</uiversity>
+        </faculty>
+        <faculty facultyId="4">
+            <name>Economic ties</name>
+            <code>109</code>
+            <uiversity>BSUIR</uiversity>
+        </faculty>
+        <faculty facultyId="5">
+            <name>High technologies</name>
+            <code>802</code>
+            <uiversity>MSLU</uiversity>
+        </faculty>
+        <faculty facultyId="6">
+            <name>Business and law</name>
+            <code>414</code>
+            <uiversity>MSLU</uiversity>
+        </faculty>
+    </faculties>
+    <universities>
+        <university universityId="1">
+            <name>BSUIR</name>
+            <code>81</code>
+        </university>
+        <university universityId="2">
+            <name>BSU</name>
+            <code>19</code>
+        </university>
+        <university universityId="3">
+            <name>MSLU</name>
+            <code>12</code>
+        </university>
+    </universities>
+</db>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
