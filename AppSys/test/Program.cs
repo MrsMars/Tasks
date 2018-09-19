@@ -17,5 +17,16 @@ namespace test
         public string Faculty { get; set; }
         public string University { get; set; }
     }
+    class Faculty
+    {
+        public string Name { get; set; }
+        public string University { get; set; }
+        public string Code { get; set; }
+    }
+    class University
+    {
+        public string Name { get; set; }
+        public string Code { get; set; }
+    }
 }
 
