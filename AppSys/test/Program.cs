@@ -8,7 +8,28 @@ namespace test
     {
         static void Main(string[] args)
         {
-            
+            int choice;
+            XDocument xdoc = XDocument.Load("db.xml");
+
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("*** *** *** Welcome to StudentBase! *** *** ***\n");
+                Console.WriteLine("Please press '1' to continue or '0' to close it\n");
+
+                choice = int.Parse(Console.ReadLine());
+            }
+            while (choice != 0 & choice != 1);
+
+            Console.Clear();
+
+            if (choice == 0) { goto l_end; }
+
+
+l_end:
+            return;
         }
     }
     class Student
