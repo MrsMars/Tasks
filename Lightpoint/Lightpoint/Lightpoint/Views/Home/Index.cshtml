@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        <h4>All shops</h4>
+        <hr />
+        <dl class="dl-horizontal"></dl>
+
+        <table class="table">
+            <tr>
+                <td><p>Shop name</p></td>
+                <td><p>Address</p></td>
+                <td><p>Work shedules</p></td>
+            </tr>
+
+            @foreach (var item in ViewBag.Shops)
+            {
+                <tr>
+                    <td><p><a href="/Home/ShowItems/@item.Id">@item.Name</a></p></td>
+                    <td><p>@item.Address</p></td>
+                    <td><p>@item.WorkShedules</p></td>
+                </tr>
+            }
+        </table>
+
+        <table class="table">
+            <tr>
+                <td><p>Shop name</p></td>
+                <td><p>Address</p></td>
+                <td><p>Work shedules</p></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

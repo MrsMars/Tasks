@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowItems</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        <h4>All items in @ViewBag.ShopName</h4>
+        <hr />
+        <dl class="dl-horizontal"></dl>
+        <table class="table">
+
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Description</b></td>
+            </tr>
+
+            @foreach (var item in ViewBag.ItemInfo)
+            {
+                <tr>
+                    <td><p>@item.Name</p></td>
+                    <td><p>@item.Description</p></td>
+                </tr>
+            }
+        </table>
+    </div>
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
