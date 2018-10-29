@@ -1,0 +1,80 @@
+﻿@model IEnumerable<APRO_Software.Models.CarInfo>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <title>MainList</title>
+</head>
+<body>
+    <div>
+        <h4>There are our cars</h4>
+        <hr />
+        <dl class="dl-horizontal"></dl>
+        @using (Html.BeginForm("Index", "Home"))
+        {
+            <div id="filter">
+                @for (int i = 0; i < ViewBag.ManufacturesCount; i++)
+                {
+                    <label>
+                        <input type="checkbox" name="selected" value="@i" />
+                        <span>@ViewBag.Manufactures[i].Name</span>
+                    </label>
+                }
+                <label>
+                    <input type="checkbox" name="All" value="All" />
+                    <span>All</span>
+                </label>
+                <input type="submit" value="Add filter">
+            </div>
+        }
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td><b>Producer</b></td>
+                        <td><b>Vehicle</b></td>
+                        <td><b>Type coupe</b></td>
+                        <td><b>Year</b></td>
+                        <td><b>Power</b></td>
+                        <td class="cost">
+                            <b>Cost</b>
+                            <div id="OrderByCost">
+                                @Ajax.ActionLink(Server.HtmlDecode("&#8593;"), "OrderByCost", new { order = true }, new AjaxOptions { UpdateTargetId = "carlist" })
+                                @Ajax.ActionLink(Server.HtmlDecode("&#8595;"), "OrderByCost", new { order = false }, new AjaxOptions { UpdateTargetId = "carlist" })
+                            </div>
+                        </td>
+                        <td>
+                            | @Html.ActionLink("Create", "Create", "Admin")
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="carlist">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><p>@item.Manufacturer</p></td>
+                            <td><p>@item.VehicleType</p></td>
+                            <td><p>@item.TypeCoupe</p></td>
+                            <td><p>@item.Year</p></td>
+                            <td><p>@item.Power hp</p></td>
+                            <td><p>@item.Cost $</p></td>
+                            <td>
+                                | @Html.ActionLink("Edit", "Edit", "Admin", new { carId = @item.Id }, null)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</body>
+</html>

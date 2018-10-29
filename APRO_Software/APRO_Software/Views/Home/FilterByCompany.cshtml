@@ -1,0 +1,19 @@
+﻿@model IEnumerable<APRO_Software.Models.CarInfo>
+
+@foreach (var item in Model)
+{
+    if (item.isCheck)
+    {
+        <tr>
+            <td><p>@item.Manufacturer</p></td>
+            <td><p>@item.VehicleType</p></td>
+            <td><p>@item.TypeCoupe</p></td>
+            <td><p>@item.Year</p></td>
+            <td><p>@item.Power hp</p></td>
+            <td><p>@item.Cost $</p></td>
+            <td>
+                | @Html.ActionLink("Edit", "Edit", "Admin", new { carId = @item.Id }, null)
+            </td>
+        </tr>
+    }
+}
